@@ -7,18 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A6844B102685E41A0042076D /* shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = A6844B0F2685E41A0042076D /* shaders.metal */; };
+		A684E36C2687F4BC0065ADC0 /* MetalEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = A684E36B2687F4BC0065ADC0 /* MetalEngine.swift */; };
 		A686E8832678A2ED005483E4 /* Muhtal_TestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A686E8822678A2ED005483E4 /* Muhtal_TestApp.swift */; };
 		A686E8852678A2ED005483E4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A686E8842678A2ED005483E4 /* ContentView.swift */; };
 		A686E8872678A2EF005483E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A686E8862678A2EF005483E4 /* Assets.xcassets */; };
 		A686E88A2678A2EF005483E4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A686E8892678A2EF005483E4 /* Preview Assets.xcassets */; };
+		A686E8932678A89E005483E4 /* MetalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A686E8922678A89E005483E4 /* MetalView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A6844B0F2685E41A0042076D /* shaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = shaders.metal; sourceTree = "<group>"; };
+		A684E36B2687F4BC0065ADC0 /* MetalEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalEngine.swift; sourceTree = "<group>"; };
 		A686E87F2678A2ED005483E4 /* Muhtal Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Muhtal Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A686E8822678A2ED005483E4 /* Muhtal_TestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Muhtal_TestApp.swift; sourceTree = "<group>"; };
 		A686E8842678A2ED005483E4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A686E8862678A2EF005483E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A686E8892678A2EF005483E4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A686E8922678A89E005483E4 /* MetalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +38,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A635C1472681FFB100B21510 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A686E8922678A89E005483E4 /* MetalView.swift */,
+				A686E8842678A2ED005483E4 /* ContentView.swift */,
+				A684E36B2687F4BC0065ADC0 /* MetalEngine.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A6844B0E2685E40A0042076D /* Metal */ = {
+			isa = PBXGroup;
+			children = (
+				A6844B0F2685E41A0042076D /* shaders.metal */,
+			);
+			path = Metal;
+			sourceTree = "<group>";
+		};
 		A686E8762678A2ED005483E4 = {
 			isa = PBXGroup;
 			children = (
@@ -51,8 +75,9 @@
 		A686E8812678A2ED005483E4 /* Muhtal Test */ = {
 			isa = PBXGroup;
 			children = (
+				A6844B0E2685E40A0042076D /* Metal */,
+				A635C1472681FFB100B21510 /* Views */,
 				A686E8822678A2ED005483E4 /* Muhtal_TestApp.swift */,
-				A686E8842678A2ED005483E4 /* ContentView.swift */,
 				A686E8862678A2EF005483E4 /* Assets.xcassets */,
 				A686E8882678A2EF005483E4 /* Preview Content */,
 			);
@@ -137,6 +162,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A684E36C2687F4BC0065ADC0 /* MetalEngine.swift in Sources */,
+				A6844B102685E41A0042076D /* shaders.metal in Sources */,
+				A686E8932678A89E005483E4 /* MetalView.swift in Sources */,
 				A686E8852678A2ED005483E4 /* ContentView.swift in Sources */,
 				A686E8832678A2ED005483E4 /* Muhtal_TestApp.swift in Sources */,
 			);
